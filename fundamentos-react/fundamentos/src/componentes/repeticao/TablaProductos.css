@@ -1,0 +1,13 @@
+.TablaProductos table{
+    width: 100%;
+}
+.TablaProductos th{
+    background-color: lightblue;
+    color:black;
+}
+.TablaProductos .Par{
+    background-color: violet;
+}
+.TablaProductos .Impar{
+    background-color: gray;
+}
