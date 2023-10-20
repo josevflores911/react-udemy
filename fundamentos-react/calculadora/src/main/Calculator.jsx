@@ -6,7 +6,7 @@ import Display from "../componentes/Display";
 export default class Calculator extends Component{
 
     constructor(props){
-        super()
+        super(props)
         this.clearMemory=this.clearMemory.bind(this);
         this.setOperation=this.setOperation.bind(this);
         this.addDigit=this.addDigit.bind(this);
@@ -31,23 +31,23 @@ export default class Calculator extends Component{
             <div className="calculator">
                 <Display value={1000}/>
                 
-                <Boton label="AC" click={this.clearMemory}/>
-                <Boton label="/" click={this.setOperation}/>
+                <Boton label="AC" click={this.clearMemory} triple/>
+                <Boton label="/" click={this.setOperation} operation/>
                 <Boton label="7"  click={this.addDigit}/>
                 <Boton label="8" click={this.addDigit}/>
                 <Boton label="9" click={this.addDigit}/>
-                <Boton label="*" click={this.setOperation}/>
+                <Boton label="*" click={this.setOperation} operation/>
                 <Boton label="4" click={this.addDigit}/>
                 <Boton label="5" click={this.addDigit}/>
                 <Boton label="6" click={this.addDigit}/>
-                <Boton label="-" click={this.setOperation}/>
+                <Boton label="-" click={this.setOperation} operation/>
                 <Boton label="1" click={this.addDigit}/>
                 <Boton label="2" click={this.addDigit}/>
                 <Boton label="3" click={this.addDigit}/>
-                <Boton label="+" click={this.setOperation}/>
-                <Boton label="0" click={this.addDigit}/>
+                <Boton label="+" click={this.setOperation} operation/>
+                <Boton label="0" click={this.addDigit} double/>
                 <Boton label="."click={this.addDigit}/>
-                <Boton label="=" click={this.setOperation}/>
+                <Boton label="=" click={this.setOperation} operation/>
             </div>
         )
     }

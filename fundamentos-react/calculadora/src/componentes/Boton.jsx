@@ -3,9 +3,10 @@ import './Boton.css';
 
 const Boton = (props)=>{
     let clases = 'Boton'
-    clases+= props.operation?'operation':'' ;
-    clases+= props.double?'double':'';
-    clases+=props.triple?'triple':'';
+    clases+= props.operation?' operation':'' ;
+    clases+= props.double?' double':'';
+    clases+=props.triple?' triple':'';
+    //console.log(props)
     
     return(
         <button 
