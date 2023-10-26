@@ -36,6 +36,15 @@ const Menu = (props)=>(
                     <Link to="/usecallback">UseCallback</Link>
                 </li>
                 <li>
+                    <Link to="/usecontext">UseContext</Link>
+                </li>
+                <li>
+                    <Link to="/usereducer">UseReducer</Link>
+                </li>
+                <li>
+                    <Link to="/usemyhook">UseMyHook</Link>
+                </li>
+                <li>
                     <Link to="/about">Sobre</Link>
                     {/* {<a href="/">Sobre</a>} */}
                 </li>

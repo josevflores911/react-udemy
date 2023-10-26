@@ -10,7 +10,9 @@ import UseEffect from "../../views/examples/UseEffect";
 import UseRef from "../../views/examples/UseRef";
 import UseMemo from "../../views/examples/UseMemo";
 import UseCallback from "../../views/examples/UseCallback";
-
+import UseContext from "../../views/examples/UseContext";
+import UseReducer from "../../views/examples/UseReducer";
+import UseMyHook from "../../views/examples/UseMyHook";
 
 const Content = (props)=>(
     <main className="Content">
@@ -38,6 +40,15 @@ const Content = (props)=>(
             </Route>
              <Route path="/usecallback">
                 <UseCallback/>
+            </Route>
+             <Route path="/usecontext">
+                <UseContext/>
+            </Route>
+            <Route path="/usereducer">
+                <UseReducer/>
+            </Route>
+            <Route path="/usemyhook">
+                <UseMyHook/>
             </Route>
              <Route path="*">
                 <NotFound/>
