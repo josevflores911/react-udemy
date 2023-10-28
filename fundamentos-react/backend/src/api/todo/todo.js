@@ -9,4 +9,4 @@ const todoSchema = new mongoose.Schema({
     
 })
 
-module.exports=restful.module('Todo',todoSchema)
+module.exports=restful.model('Todo',todoSchema)
